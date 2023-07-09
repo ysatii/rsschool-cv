@@ -1,12 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-</body>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="icon" href="img/cv.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <header>
+      <button class="burger">
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about-me">About me</a></li>
+          <li class="nav__item"><a href="#skills">Skills</a></li>
+          <li class="nav__item"><a href="#code-example">Code</a></li>
+          <li class="nav__item"><a href="#projects">Projects</a></li>
+          <li class="nav__item"><a href="#contact">Contacts</a></li>
+          <li class="nav__item"><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="left-side">
+        <figure class="figure--left-side">
+          <img
+            src="img/front-end.jpg"
+            width="300"
+            height="300"
+            class="photo"
+            alt="Photo">
+        </figure>
+        <section class="contact" id="contact">
+          <h2 class="section-title">Contact</h2>
+          <ul class="contact__list">
+            <li class="contact__item">
+              Discord: <br>
+              Юрий Мельник#0303
+            </li>
+            <li class="contact__item">
+              Email:<a href="mailto:dvr07@yandex.ru">dvr07@yandex.ru</a>
+            </li>
+            <li class="contact__item">
+              Address:<br>
+              <span>Moscow, Russia</span>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <a href="https://www.mirea.ru/">MIREA</a>
+            </li>
+            <li class="education__item">
+              <a href="https://www.msu.ru/">MSU</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-side">
+      <section class="page-title">
+        <h1 class="main-title">Dmitry <br>Dolganov</h1>
+        <p>Front-End developer</p>
+      </section>
+      <figure class="figure--right-side">
+        <img src="img/Photo.jpg" width="380" height="507" class="photo" alt="Photo">
+      </figure>
+      <section class="about-me" id="about-me">
+          <h2 class="section-title">About me</h2>
+          <p>
+            I set myself the goal of becoming the best frontend developer!
+          </p>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills__list">
+            <li>HTML/HTML5, CSS3/SCSS, BEM</li>
+            <li>JavaScript/ES6</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Figma, Git, Webpack</li>
+            <li>English - A1...</li>
+          </ul>
+        </section>
+        <section class="code-example" id="code-example">
+          <h2 class="section-title">Code example</h2>
+          <details>
+            <summary>My super code!</summary>
+            <pre>
+              <code data-language = "javascript">
+          function multiply(a, b) { 
+            return a * b;
+          }
+              </code>
+            </pre>
+          </details>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="section-title">My projects</h2>
+          <a href="https://ysatii.github.io/rsschool-cv/">My first project</a>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="footer__github" href="https://github.com/ysatii" target="_blank">
+        My GitHub
+      </a>
+      <p class="footer__year">2023-2024</p>
+      <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+        <img src="img/rs_school_js.svg" width="86" height="32" alt="RS School">
+      </a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
