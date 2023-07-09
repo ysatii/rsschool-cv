@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="icon" href="img/31.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <header>
+      <button class="burger">
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about-me">About me</a></li>
+          <li class="nav__item"><a href="#skills">Skills</a></li>
+          <li class="nav__item"><a href="#code-example">Code</a></li>
+          <li class="nav__item"><a href="#projects">Projects</a></li>
+          <li class="nav__item"><a href="#contact">Contacts</a></li>
+          <li class="nav__item"><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="left-side">
+        <figure class="figure--left-side">
+          <img src="img/front-end.jpg" width="200" height="200" class="photo" alt="Photo">
+        </figure>
+        <section class="contact" id="contact">
+          <h1 class="section-title">Contact</h1>
+          <ul class="contact__list">
+            <li class="contact__item">
+              Discord: <br>
+              Мельник Юрий#0303
+            </li>
+            <li class="contact__item">
+              Email:<a href="mailto:yrik.m@mail.ru">yrik.m@mail.ru</a>
+            </li>
+            <li class="contact__item">
+              Address:<br>
+              <span>Moscow, Russia</span>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <a href="https://www.mirea.ru/">MIREA</a>
+              <ul>
+                Faculty of Radio Engineering
+              </ul>
+            </li>
+            <li class="education__item">
+              <a href="https://www.msu.ru/">MSU</a>
+              <ul>
+                Сomputer relations designer
+              </ul>
+            </li>
+            <li class="education__item">
+              <a href="https://www.Specialist.Ru/">Bauman Computer Training Center "Specialist.Ru"</a>
+              <ul>
+                <li>Basics of php programming level 1 and 2</li>
+                <li>Linux (unix). Fundamentals of Administration and Security</li>
+                <li>Linux (unix). Using unix systems as Internet servers</li>
+                <li>Marketing and Optimization of web sites on the Internet</li>
+                <li>Mysql 5 database server</li>
+                <li>Design and design in the AutoCAD system (Training center "A.F. Konto" NOU)</li>
+
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-side">
+      <section class="page-title">
+        <h2 class="main-title">Yuri<br>Melnik</h2>
+        <p>IT-specialist</p>
+      </section>
+      <figure class="figure--right-side">
+        <img src="img/Photo.jpg" width="380" height="507" class="photo" alt="Photo">
+      </figure>
+      <section class="about-me" id="about-me">
+          <h2 class="section-title">About me</h2>
+          <p>
+            I am currently working as a part time IT engineer for DEVOPS. I have skills in administering servers based on the Linux operating system, doing programming in python.
+            I constantly improve my knowledge in the IT field so that, from time to time, I completely immerse myself in the IT field and work full time!
+          </p>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills__list">
+            <li>Version control: Git (remote service GitHub)</li>
+            <li>Windows OS, Linux(Ubuntu)</li>
+            <li>Figma()</li>
+            <li>React</li>
+            <li>Figma, Git, Webpack</li>
+            <li>English - little</li>
+          </ul>
+        </section>
+        <section class="code-example" id="code-example">
+          <h2 class="section-title">Code example</h2>
+          <details>
+            <summary>Bit Counting from CODEWARS**: Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.</summary>
+            <pre>
+              <code data-language = "javascript">
+                var countBits = function(n) {
+                  if (n == 0) {
+                     return 0
+                  } else {
+                  temp = n.toString(2)
+                  return (temp.match(/1/g)).length
+                  }
+                };
+              </code>
+            </pre>
+          </details>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="section-title">My projects</h2>
+          <a href="https://ysatii.github.io/rsschool-cv/">My first project</a>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="footer__github" href="https://github.com/ysatii" target="_blank">
+        My GitHub
+      </a>
+      <p class="footer__year">2023-2024</p>
+      <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+        <img src="img/rs_school_js.svg" width="86" height="32" alt="RS School">
+      </a>
+    </footer>
+  </body>
+</html>
