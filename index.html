@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
-    <link rel="icon" href="img/cv.png">
+    <link rel="icon" href="31.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -26,22 +26,17 @@
     <main class="container">
       <div class="left-side">
         <figure class="figure--left-side">
-          <img
-            src="img/front-end.jpg"
-            width="300"
-            height="300"
-            class="photo"
-            alt="Photo">
+          <img src="Avatar.jpg" width="200" height="200" class="photo" alt="Avatar">
         </figure>
         <section class="contact" id="contact">
-          <h2 class="section-title">Contact</h2>
+          <h1 class="section-title">Contact</h1>
           <ul class="contact__list">
             <li class="contact__item">
               Discord: <br>
               Юрий Мельник#0303
             </li>
             <li class="contact__item">
-              Email:<a href="mailto:dvr07@yandex.ru">dvr07@yandex.ru</a>
+              Email:<a href="mailto:yrik.m@mail.ru">yrik.m@mail.ru</a>
             </li>
             <li class="contact__item">
               Address:<br>
@@ -63,7 +58,7 @@
       </div>
       <div class="right-side">
       <section class="page-title">
-        <h1 class="main-title">Dmitry <br>Dolganov</h1>
+        <h2 class="main-title">Dmitry <br>Dolganov</h2>
         <p>Front-End developer</p>
       </section>
       <figure class="figure--right-side">
@@ -92,9 +87,14 @@
             <summary>My super code!</summary>
             <pre>
               <code data-language = "javascript">
-          function multiply(a, b) { 
-            return a * b;
-          }
+                var countBits = function(n) {
+                  if (n == 0) {
+                     return 0
+                  } else {
+                  temp = n.toString(2)
+                  return (temp.match(/1/g)).length
+                  }
+                };
               </code>
             </pre>
           </details>
